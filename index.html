@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- kiểu chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" data-page="news">News</a>
+            <a href="assets/pages/products.html" data-page ="products">Product</a>
+        </nav>
+    </header>
+    <main id="content-main">
+        <button class="btn-buy">Mua ngay</button>
+    </main>
+        <!-- Layout các trang sẽ chuyển động linh hoạt ở đây -->
+    </main>
+    <footer>
+        <p>�� 2021 Company Name. All rights reserved.</p>
+    </footer>
+
+
+    <!-- script này cấm dc đụng vào -->
+    <script>
+        function loadingPage(page){
+            fetch(`assets/pages/${page}.html`)
+                .then((res) =>{
+                    if(!res.ok){
+                        throw new Error('Page not found');
+                    }
+                    return res.text();
+                })
+                .then((data) =>{
+                    document.getElementById('content-main').innerHTML = data;
+                })
+                .catch((err) =>{
+                    document.getElementById('content-main').innerHTML = `<p> Không tìm thấy trang </p>`
+                })
+        }
+
+        document.querySelectorAll('nav a').forEach((link) =>{
+            link.addEventListener('click', (e) =>{
+                e.preventDefault()
+                const page = link.getAttribute('data-page')
+                loadingPage(page)
+            })
+        })
+    </script>
+</body>
+</html>

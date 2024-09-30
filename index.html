@@ -1,60 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <!-- kiểu chữ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/base.css">
-</head>
-<body>
-    <header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <!-- boostrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <header>
         <nav>
             <a href="#" data-page="news">News</a>
             <a href="assets/pages/products.html" data-page ="products">Product</a>
         </nav>
+    </header> -->
+
+    <!-- Modal -->
+
+    <header style="background: #ffd500">
+      <nav class="container-dst navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/imgs/Logo-The-Gioi-Di-Dong-MWG-B-V.webp"
+              width="100"
+              height="50"
+              alt="logo"
+            />
+          </a>
+          <form class="d-flex" role="search">
+            <input
+              class="input-search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active icon-user"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="fa-regular fa-user"></i>
+                  <span style="margin-left: 5px">Đăng nhập</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  style="margin: 0 25px"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span style="margin-left: 5px">Giỏ hàng</span>
+                </a>
+              </li>
+              <li class="nav-item-dropdown-toggle">
+                <button
+                  class="nav-link dropdown-toggle"
+                  style="color: black"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  Đồng Nai
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <main id="content-main">
-        <button class="btn-buy">Mua ngay</button>
-    </main>
-        <!-- Layout các trang sẽ chuyển động linh hoạt ở đây -->
-    </main>
+
+    <div class="bg-main">
+      <main class="content-main container-dst">
+        <!-- banner -->
+
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/hp1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/phone1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/watch1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 2</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Lặp lại các sản phẩm tương tự -->
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/hp1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/phone1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/watch1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 2</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/hp1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/phone1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 1</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3 col-lg-2 mb-4">
+              <div class="card">
+                <img src="assets/imgs/watch1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Sản phẩm 2</h5>
+                  <p class="card-text">Mô tả ngắn gọn về sản phẩm.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <footer>
-        <p>�� 2021 Company Name. All rights reserved.</p>
+      <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+        <div class="row">
+          <div class="col-lg-3 mb-3">
+            <a
+              class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none"
+              href="/"
+              aria-label="Bootstrap"
+            >
+              <span class="fs-6">Tổng đài hỗ trợ</span>
+            </a>
+            <ul class="list-unstyled small">
+              <li class="mb-2">
+                Gọi mua:
+                <a
+                  href="tel:1900232460"
+                  style="text-decoration: none; font-weight: 800"
+                  >1900232460</a
+                >
+                (8:00 - 21:30)
+              </li>
+
+              <li class="mb-2">
+                Khiếu nại:
+                <a
+                  href="tel:1800.1062"
+                  style="text-decoration: none; font-weight: 800"
+                  >1800.1062</a
+                >
+                (8:00 - 21:30)
+              </li>
+
+              <li class="mb-2">
+                Bảo hành:
+                <a
+                  href="tel:1900 232 464"
+                  style="text-decoration: none; font-weight: 800"
+                  >1900 232 464</a
+                >
+                (8:00 - 21:30)
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+            <p style="font-weight: 700">Về công ty</p>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="/">Giới thiệu công ty (MWG.vn)</a></li>
+              <li class="mb-2"><a href="/docs/5.3/">Tuyển dụng</a></li>
+              <li class="mb-2">
+                <a href="/docs/5.3/examples/">Gửi góp ý, khiếu nại</a>
+              </li>
+              <li class="mb-2">
+                <a href="https://icons.getbootstrap.com/"
+                  >Tìm siêu thị (2.967 shop)</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 mb-3">
+            <p style="font-weight: 700">Thông tin khác</p>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/">Tích điểm Quà tặng VIP</a>
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/examples/starter-template/"
+                  >Lịch sử mua hàng</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/webpack/"
+                  >DV vệ sinh máy lạnh</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/parcel/"
+                  >Tìm hiểu về mua trả góp</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="/docs/5.3/getting-started/vite/"
+                  >Chính sách bảo hành</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="col-6 col-lg-3 mb-3">
+            <p style="font-weight: 700">Website cùng tập đoàn</p>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <img style="background-size: contain;" src="assets/imgs/banner-footer.png" alt="">
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
     </footer>
 
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="address-form-content">
+              <form action="">
+                <p>
+                  Quý khách vui lòng cho biết Địa Chỉ Nhận Hàng để biết chính
+                  xác thời gian giao hàng
+                </p>
+                <select name="" id="location-select">
+                  <option value="#">--Chọn địa điểm</option>
+                  <option value="#">--Đồng Nai</option>
+                </select>
+
+                <select name="" id="district-select">
+                  <option value="#">--Chọn quận/huyện</option>
+                  <option value="#">--Đồng Nai</option>
+                </select>
+
+                <select name="" id="ward-select">
+                  <option value="#">--Chọn phường/xã</option>
+                  <option value="#">--Đồng Nai</option>
+                </select>
+
+                <input type="text" placeholder="Số nhà tên đường" required />
+                <button type="submit">Xác nhận</button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- script này cấm dc đụng vào -->
     <script>
-        function loadingPage(page){
-            fetch(`assets/pages/${page}.html`)
-                .then((res) =>{
-                    if(!res.ok){
-                        throw new Error('Page not found');
-                    }
-                    return res.text();
-                })
-                .then((data) =>{
-                    document.getElementById('content-main').innerHTML = data;
-                })
-                .catch((err) =>{
-                    document.getElementById('content-main').innerHTML = `<p> Không tìm thấy trang </p>`
-                })
-        }
+      function loadingPage(page) {
+        fetch(`assets/pages/${page}.html`)
+          .then((res) => {
+            if (!res.ok) {
+              throw new Error("Page not found");
+            }
+            return res.text();
+          })
+          .then((data) => {
+            document.getElementById("content-main").innerHTML = data;
+          })
+          .catch((err) => {
+            document.getElementById(
+              "content-main"
+            ).innerHTML = `<p> Không tìm thấy trang </p>`;
+          });
+      }
 
-        document.querySelectorAll('nav a').forEach((link) =>{
-            link.addEventListener('click', (e) =>{
-                e.preventDefault()
-                const page = link.getAttribute('data-page')
-                loadingPage(page)
-            })
-        })
+      document.querySelectorAll("nav a").forEach((link) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          const page = link.getAttribute("data-page");
+          loadingPage(page);
+        });
+      });
     </script>
-</body>
+    <script src="assets/js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #000;
@@ -12,6 +13,9 @@ a {
 ul,
 li {
   list-style: none;
+}
+.bg-main {
+  background-color: rgb(242, 244, 247);
 }
 
 .container-dst {

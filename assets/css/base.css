@@ -23,7 +23,10 @@ li {
 .bg-main {
   background-color: rgb(242, 244, 247);
 }
-
+button {
+  outline: none;
+  border: none;
+}
 .container-dst {
   max-width: 1200px;
   margin: auto;

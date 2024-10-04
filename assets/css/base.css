@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 1s;
 }
 
 a {

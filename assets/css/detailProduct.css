@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.container-dst {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: start;
+}
+
+.flex-content-two {
+  display: flex;
+}
+.container-dst-c-b {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right {
+  width: 400px;
+  height: auto;
+  border: 1px solid #5444e3;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 3%;
+}
+.divb .nb {
+  background-color: #4a90e2;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-block;
+  font-size: 11px;
+  float: left;
+  height: 16px;
+  line-height: 16px;
+  margin-top: 2px;
+  text-align: center;
+  width: 16px;
+}
+.rightv2 {
+  .right {
+    width: 400px;
+    height: auto;
+    border: 1px solid #070425;
+    border-radius: 5px;
+    margin-top: 3%;
+  }
+}
+.iconcmt-allstar {
+  background-position: 0 -75px;
+  height: 17px;
+  width: 18px;
+}
+[class^="iconcmt-"],
+[class*="iconcmt-"] {
+  background-image: url("img/star.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 30px;
+  vertical-align: middle;
+  background-size: 200px 150px;
+}
+
+.bg-content {
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+}
+
+.img-detail {
+  filter: drop-shadow(0 25px 45px rgb(0 0 0 / 0.15));
+}
+.btn-info {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 50px;
+  color: rgb(106, 106, 208);
+  font-weight: 800;
+  border: 1px solid #7cb4f3;
+}
+.btn-b-l {
+  padding: 14px 10px;
+  background-color: #ffffff;
+  border: 1px solid rgb(102, 100, 100);
+  border-radius: 8px;
+  color: #0071e3;
+  line-height: 17px;
+  text-align: center;
+  width: 49%;
+}
+.btn-b-l:hover {
+  background-color: #3a3939;
+  color: #fff;
+  transition: ease-in 0.3s;
+}
+.btn-b-r {
+  padding: 14px 10px;
+  background-color: #0071e3;
+  border: 1px solid #0071e3;
+  border-radius: 8px;
+  color: #fff;
+  line-height: 17px;
+  text-align: center;
+  width: 49%;
+}
+
+.btn-b-r:hover {
+  background-color: #fff;
+  color: #0071e3;
+  transition: ease-in 0.3s;
+}
+
+.bg-right {
+  filter: drop-shadow(0 25px 45px rgb(0 0 0 / 0.15));
+}

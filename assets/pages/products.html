@@ -4,14 +4,571 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/product.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <main id="content-main">
-      Products <i class="fa-brands fa-twitter"></i>
-      <ul class="container-dst container-dst-c-c">
-        <li>1</li>
-        <li>2</li>
-      </ul>
+    <main id="container-main">
+      <div class="container-dst">
+        <!-- đầu trang -->
+        <nav
+          style="
+            --bs-breadcrumb-divider: url(
+              &#34;data:image/svg + xml,
+              %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+            );
+          "
+          aria-label="breadcrumb"
+        >
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#" style="color: gray; text-decoration: none"
+                >Trang chủ</a
+              >
+            </li>
+            <li
+              class="breadcrumb-item active"
+              aria-current="page"
+              style="color: black"
+            >
+              LapTop
+            </li>
+          </ol>
+        </nav>
+        <!-- end -->
+        <!-- banner quảng cáo -->
+        <div class="container-dst-c-c banner">
+          <img
+            src="banner1.png"
+            alt="Khuyến mãi thế giới di động"
+            style="border-radius: 10px"
+            width="50%"
+          />
+          <img
+            src="banner2.png"
+            alt="Khuyến mãi thế giới di động"
+            style="border-radius: 10px"
+            width="50%"
+          />
+        </div>
+
+        <!-- end -->
+        <!-- button hãng -->
+
+        <div class="container-dst">
+          <div style="margin-top: 30px; margin-bottom: 10px" class="row">
+            <button class="col-3 col-md-3 col-lg-1 mb-3 btn-first">Lọc</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">HP</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">ASUS</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">DELL</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">LENOVO</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">ACER</button>
+            <button class="col-3 col-md-3 col-lg-1 mb-3 button">MSI</button>
+          </div>
+        </div>
+
+        <!-- end -->
+        <!-- item lọc -->
+        <div class="flex-sort">
+          <p class="sort">Sắp xếp theo:</p>
+          <ul class="sort-item">
+            <li><a>Nổi bật</a></li>
+            <li><a>Bán Chạy</a></li>
+            <li><a>Giảm giá</a></li>
+            <li><a>Mới</a></li>
+
+            <li class="is-active"><a href="#" aria-current="page">Giá</a></li>
+          </ul>
+        </div>
+        <!-- end item lọc -->
+        <!-- list sản phẩm -->
+        <div class="container mt-3 bg-content">
+          <div id="product-list" class="row">
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img src="image/1.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Asus Vivobook Go 15 E1504FA R5 7520U (NJ776W)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 16 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.0</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/acer-aspire-3-a315-58-529v-i5-nxaddsv00n-140924-125407-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Dell Inspiron 15 3520 i5 1235U (N5I5052W1)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 4 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">4.430.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.430.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">3.0</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/macbook-air-m1-2020-gray-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    HP 15 fd0234TU i5 1334U (9Q969PA)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 8 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.530.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">16.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.4</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/msi-gf63-thin-12ve-i5-460vn-150624-020653-600x600.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Lenovo Ideapad Slim 3 15IAH8 i5 12450H (83ER000EVN)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 16 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">14.390.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">18.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.5</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/dell-inspiron-15-3520-i5-n5i5052w1-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Asus Vivobook 15 X1504ZA i3 1215U (NJ102W)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 8 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.2</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/hp-15-fd0234tu-i5-9q969pa-thumb-1-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Acer Aspire 3 A315 58 529V i5 1135G7 (NX.ADDSV.00N)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 4 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">11.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">16.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.7</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/hp-pavilion-15-eg2081tu-i5-7c0q4pa-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    MacBook Air 13 inch M1
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 8 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">13.420.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.1</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/lenovo-ideapad-slim-3-15iah8-i5-83er00evn-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Lenovo Gaming LOQ 15IAX9 i5 12450HX (83GS000JVN)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 16 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.2</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/lenovo-loq-gaming-15iax9-i5-83gs000jvn-thumb-new-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    HP Pavilion 15 eg2081TU i5 1240P (7C0Q4PA)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 16 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">16.679.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.5</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/macbook-air-m1-2020-gray-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Asus Vivobook 15 OLED A1505ZA i5 12500H (MA415W)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 4 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">11.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.320.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.8</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/lenovo-ideapad-slim-3-15amn8-r5-82xq00j0vn-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    HP 15 fd0303TU i3 1315U (A2NL4PA)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 4 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">14.490.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.0</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-6 col-md-3 col-lg-2 mb-4 box-hover">
+              <a>
+                <img
+                  src="image/asus-vivobook-15-x1504za-i3-nj102w-thumb-600x600.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-title" style="font-size: 16px">
+                    Acer Aspire 3 A315 44P R9W8 R7 5700U (NX.KSJSV.002)
+                  </p>
+                  <div>
+                    <button class="btn-product" type="button" disabled>
+                      RAM 8 GB
+                    </button>
+                    <button class="btn-product" type="button" disabled>
+                      SSD 512 GB
+                    </button>
+                  </div>
+
+                  <p class="bonus">Online giá rẻ quá</p>
+                  <p class="online-price">12.590.000₫</p>
+                  <div class="flex-price">
+                    <p class="original-price">12.800.000₫</p>
+                    <p class="specs">-13%</p>
+                  </div>
+                  <p class="grif">Quà 1.090.000₫</p>
+                  <div class="rating-section">
+                    <span class="star-icon">★</span>
+                    <span class="rating-value">4.1</span>
+                    <span class="rating-count">(34)</span>
+                    <a href="#" class="compare-link">So sánh</a>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- end sp -->
+        <!-- Button Xem thêm sp -->
+        <div class="d-grid gap-2 col-6 mx-auto">
+          <button class="btn btn-primary mt-3" type="button">
+            Xem thêm 271 Laptop
+          </button>
+        </div>
+        <!-- end button -->
+        <!-- đánh giá -->
+        <div class="feedback-container">
+          <p>
+            Bạn có hài lòng với trải nghiệm tìm kiếm thông tin, sản phẩm trên
+            website không?
+          </p>
+          <div class="feedback-options">
+            <div class="option happy">
+              <span class="emoji">😊</span>
+              <span class="label">Hài lòng</span>
+            </div>
+            <div class="option sad">
+              <span class="emoji">😔</span>
+              <span class="label">Không hài lòng</span>
+            </div>
+          </div>
+        </div>
+        <!-- end đánh giá -->
+        <!-- Content giới thiệu LapTop -->
+        <div>
+          <p>
+            Kể từ khi ra đời lần đầu tiên cách đây hơn 40 năm bởi Osborne
+            Computer, chiếc laptop đã không ngừng được các hãng sản xuất cải
+            tiến cả về ngoại hình và công nghệ. Đến nay, nó đã trở thành một
+            trong những thiết bị điện tử không thể thiếu phục vụ cho nhiều mục
+            đích như công việc, học tập và giải trí.
+          </p>
+        </div>
+        <!-- end content -->
+        <!-- Button Xem thêm thông tin -->
+        <div class="container-dst-c-c">
+          <button class="button is-small" type="button">Xem thêm</button>
+        </div>
+        <!-- end button -->
+      </div>
     </main>
   </body>
 </html>

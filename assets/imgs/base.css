@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
+  .container-dst {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .container-dst-c-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-dst-c-b {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container-dst-c-ar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .btn-buy {
+    padding: 10px 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #fc7600;
+    color: white;
+  }
+  
